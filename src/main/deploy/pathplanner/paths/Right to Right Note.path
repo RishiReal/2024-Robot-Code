@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.605446450638889,
+        "y": 4.519101746126241
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.6357096458782532,
+        "y": 4.1032682787827435
+      },
+      "isLocked": false,
+      "linkedName": "Right Start"
+    },
+    {
+      "anchor": {
+        "x": 2.7445282881306503,
+        "y": 4.105812143105768
+      },
+      "prevControl": {
+        "x": 1.5931184524912134,
+        "y": 4.107855990438716
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "right note position"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": true
+  },
+  "reversed": false,
+  "folder": "Simple Autos",
+  "previewStartingState": {
+    "rotation": -60.0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}

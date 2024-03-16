@@ -1,0 +1,49 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.6653743214895826,
+      "y": 6.555025799858952
+    },
+    "rotation": 60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left to Far Left"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Far Left to Shoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "FarLeftShootPlace to Left Mid"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left Mid to FarLeftShootPlace"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Yuh to Score!"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "4 Note Autos",
+  "choreoAuto": false
+}

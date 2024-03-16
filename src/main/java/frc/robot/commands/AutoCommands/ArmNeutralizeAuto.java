@@ -2,41 +2,33 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
 
-package frc.robot.commands;
+package frc.robot.commands.AutoCommands;
 
-import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
-import frc.robot.Constants.OIConstants;
-import frc.robot.subsystems.Shooter;
+import frc.robot.Constants.NoteHandlerConstants;
+import frc.robot.subsystems.NoteHandler;
 
-public class ShooterJoystickCmd extends Command {
+public class ArmNeutralizeAuto extends Command {
 
-  private final Shooter shooter;
-  private final XboxController gamepad;
+  private final NoteHandler noteHandler;
+  private double encoderAngle;
 
-  /** Creates a new IntakeCargo. */
-  public ShooterJoystickCmd(Shooter shooter, XboxController gamepad) {
+  /** Creates a new IntakeNoteAuto. */
+  public ArmNeutralizeAuto(NoteHandler noteHandler) {
     // Use addRequirements() here to declare subsystem dependencies.
-    this.shooter = shooter;
-    this.gamepad = gamepad;
-    addRequirements(shooter);
+    this.noteHandler = noteHandler;
+    addRequirements(noteHandler);
   }
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {
-  }
+  public void initialize() {}
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    
-    if (gamepad.getRawAxis(OIConstants.XBX_R_TRIG) > 0.05) {
-        shooter.shoot();
-    }
-    if (gamepad.getRawButton(OIConstants.RIGHT_BUMPER)) {
-        shooter.increaseSpeed();
-    }
+    encoderAngle = Math.toRadians(10);
+    noteHandler.setArmAngle(encoderAngle);
   }
 
   // Called once the command ends or is interrupted.
@@ -46,6 +38,6 @@ public class ShooterJoystickCmd extends Command {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return false;
+    return (Math.abs(encoderAngle - noteHandler.getArmAngle()) <= NoteHandlerConstants.ANGLE_TOLERANCE);
   }
 }

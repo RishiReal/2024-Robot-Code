@@ -1,7 +1,5 @@
 package frc.robot.subsystems;
 
-import javax.management.relation.Relation;
-
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.RelativeEncoder;
 import com.revrobotics.CANSparkLowLevel.MotorType;
@@ -38,6 +36,12 @@ public class SwerveModule {
 
         driveMotor = new CANSparkMax(driveMotorId, MotorType.kBrushless);
         turningMotor = new CANSparkMax(turningMotorId, MotorType.kBrushless);
+
+        driveMotor.setSmartCurrentLimit(40);
+        turningMotor.setSmartCurrentLimit(20);
+
+        driveMotor.burnFlash();
+        turningMotor.burnFlash();
 
         driveMotor.setInverted(driveMotorReversed);
         turningMotor.setInverted(turningMotorReversed);

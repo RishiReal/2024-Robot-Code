@@ -1,0 +1,56 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "Pigeon 2 (v6)[0]": {
+        "header": {
+          "open": true
+        }
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/3 Note Left LONG - MID": "Command",
+      "/SmartDashboard/3 Note RIGHT CLOSE (Left on Red)": "Command",
+      "/SmartDashboard/3 Note Right side FAR (Left on Red)": "Command",
+      "/SmartDashboard/4 Note Left (Right on Red)": "Command",
+      "/SmartDashboard/4 Note Middle": "Command",
+      "/SmartDashboard/4 Note Right (Left on Red)": "Command",
+      "/SmartDashboard/5 Note Left": "Command",
+      "/SmartDashboard/5 Note Right": "Command",
+      "/SmartDashboard/AutoChooser": "String Chooser",
+      "/SmartDashboard/Left 2 Note (Right on Red)": "Command",
+      "/SmartDashboard/Left Long Left 4 Note (Right on Red)": "Command",
+      "/SmartDashboard/Mid 2 Note": "Command",
+      "/SmartDashboard/Middle Start to Middle and Right (left on Red)": "Command",
+      "/SmartDashboard/Middle Start to middle and left (right on red)": "Command",
+      "/SmartDashboard/Right 2 note (Left on Red)": "Command"
+    }
+  },
+  "NetworkTables": {
+    "transitory": {
+      "PathPlanner": {
+        "open": true
+      },
+      "Shuffleboard": {
+        "open": true
+      },
+      "SmartDashboard": {
+        "AutoChooser": {
+          "open": true
+        },
+        "open": true
+      }
+    }
+  },
+  "NetworkTables Info": {
+    "Connections": {
+      "open": true
+    },
+    "Server": {
+      "open": true
+    },
+    "visible": true
+  }
+}

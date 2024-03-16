@@ -1,0 +1,55 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.605446450638889,
+      "y": 4.519101746126241
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right to Right Note"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Right Note to Center"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Copy of Mid to Mid short"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "MidNote to Left Note Curved"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Left Note to Far Left"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Far Left - Mid Optimized"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "5 Note Autos",
+  "choreoAuto": false
+}

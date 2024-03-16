@@ -1,0 +1,49 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.9223627152162022,
+        "y": 5.521727743683371
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.8513389990946958,
+        "y": 7.09084116431762
+      },
+      "isLocked": false,
+      "linkedName": "Mid Pickup"
+    },
+    {
+      "anchor": {
+        "x": 2.813069737250586,
+        "y": 6.991797900262468
+      },
+      "prevControl": {
+        "x": 1.7937962727777308,
+        "y": 6.96869737720957
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "LeftNotePosition"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 4.5,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "4 Note Easy",
+  "previewStartingState": null,
+  "useDefaultConstraints": false
+}
