@@ -12,7 +12,7 @@ This repository encapsulates our efforts in developing a robust, autonomous-capa
 
 ---
 
-## 🚀Project Overview
+## Project Overview
 
 Our 2024 robot was engineered to:
 
