@@ -1,18 +1,18 @@
-# 🤖 FRC 2024 Robot Code – Team 1099
+# FRC 2024 Robot Code – Team 1099
 
 
 This repository encapsulates our efforts in developing a robust, autonomous-capable robot, integrating advanced vision systems and precise motion control.
 
 ---
 
-## 🎬 Demo Video
+## Demo Video
 
 2024 Recap of robot:
 [Watch on YouTube](https://www.youtube.com/watch?v=0a_ImXGhRR4)
 
 ---
 
-## 🚀 Project Overview
+## 🚀Project Overview
 
 Our 2024 robot was engineered to:
 
@@ -49,35 +49,3 @@ Key technologies and tools employed:
 - Real-time telemetry displayed via SmartDashboard and Shuffleboard.
 
 ---
-
-## 📁 Repository Structure
-2024-Robot-Code/
-├── .pathplanner/ # Trajectory files for autonomous paths
-├── .vscode/ # VSCode settings
-├── .wpilib/ # WPILib project configuration
-├── gradle/ # Gradle wrapper files
-├── src/
-│ └── main/
-│ └── java/
-│ └── frc/
-│ └── robot/
-│ ├── commands/ # Command-based actions
-│ ├── subsystems/ # Subsystem implementations
-│ ├── vision/ # YOLOv5 integration / limelight integration
-│ ├── limelight/ # Limelight processing
-│ ├── Robot.java # Main robot class
-│ └── Constants.java # Configuration constants
-├── vendordeps/ # Vendor dependencies (e.g., CTRE, REV)
-├── build.gradle # Gradle build script
-├── settings.gradle # Gradle settings
-└── README.md # Project documentation
-
-
----
-
-### Prerequisites
-
-- [WPILib 2024](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-1/wpilib-setup.html)
-- [Gradle](https://gradle.org/install/) (if not using the wrapper)
-- [Visual Studio Code](https://code.visualstudio.com/) with the WPILib extension
-- 
