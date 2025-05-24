@@ -1,0 +1,83 @@
+# 🤖 FRC 2024 Robot Code – Team 1099
+
+
+This repository encapsulates our efforts in developing a robust, autonomous-capable robot, integrating advanced vision systems and precise motion control.
+
+---
+
+## 🎬 Demo Video
+
+2024 Recap of robot:
+[Watch on YouTube](https://www.youtube.com/watch?v=0a_ImXGhRR4)
+
+---
+
+## 🚀 Project Overview
+
+Our 2024 robot was engineered to:
+
+- **Navigate autonomously** using pre-defined trajectories.
+- **Detect and track game elements** utilizing dual vision systems.
+- **Execute complex maneuvers** with precision through advanced control algorithms.
+
+Key technologies and tools employed:
+
+- **Java** with **WPILib** for robot control.
+- **PathPlanner** for trajectory planning.
+- **Limelight** for AprilTag and reflective tape detection.
+- **YOLOv5** for real-time object detection.
+- **PID and feedforward control** for motion profiling.
+- **Sensor fusion** integrating encoders, IMU, and vision data.
+
+---
+
+## Features
+
+### Autonomous Navigation
+
+- Utilizes PathPlanner for generating and following trajectories.
+- Implements PID and feedforward control for smooth motion.
+
+### Dual Vision Systems
+
+- **Limelight**: Provides rapid target acquisition and AprilTag alignment.
+- **YOLOv5**: Custom-trained models enable detection of specific game elements.
+
+### Operator Interface
+
+- Driver-friendly controls with intuitive mappings.
+- Real-time telemetry displayed via SmartDashboard and Shuffleboard.
+
+---
+
+## 📁 Repository Structure
+2024-Robot-Code/
+├── .pathplanner/ # Trajectory files for autonomous paths
+├── .vscode/ # VSCode settings
+├── .wpilib/ # WPILib project configuration
+├── gradle/ # Gradle wrapper files
+├── src/
+│ └── main/
+│ └── java/
+│ └── frc/
+│ └── robot/
+│ ├── commands/ # Command-based actions
+│ ├── subsystems/ # Subsystem implementations
+│ ├── vision/ # YOLOv5 integration / limelight integration
+│ ├── limelight/ # Limelight processing
+│ ├── Robot.java # Main robot class
+│ └── Constants.java # Configuration constants
+├── vendordeps/ # Vendor dependencies (e.g., CTRE, REV)
+├── build.gradle # Gradle build script
+├── settings.gradle # Gradle settings
+└── README.md # Project documentation
+
+
+---
+
+### Prerequisites
+
+- [WPILib 2024](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-1/wpilib-setup.html)
+- [Gradle](https://gradle.org/install/) (if not using the wrapper)
+- [Visual Studio Code](https://code.visualstudio.com/) with the WPILib extension
+- 
